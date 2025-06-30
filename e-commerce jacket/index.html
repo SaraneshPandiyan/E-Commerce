@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Men's Dress Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Men's Dress Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login/Signup</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="product-list">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x250?text=Classic+Shirt" alt="Classic Shirt" />
+      <h3>Classic Shirt</h3>
+      <p>$40</p>
+      <button onclick="addToCart('Classic Shirt', 40)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/200x250?text=Formal+Suit" alt="Formal Suit" />
+      <h3>Formal Suit</h3>
+      <p>$150</p>
+      <button onclick="addToCart('Formal Suit', 150)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/200x250?text=Casual+Trousers" alt="Casual Trousers" />
+      <h3>Casual Trousers</h3>
+      <p>$60</p>
+      <button onclick="addToCart('Casual Trousers', 60)">Add to Cart</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
